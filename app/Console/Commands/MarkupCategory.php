@@ -7,8 +7,8 @@ use App\Models\Category;
 use App\Models\MarkupHistory;
 
 class MarkupCategory extends Command {
+
     protected $signature = 'markup:set-category {rate} {category}';
-    protected $description = 'Update retail prices for a specific category';
 
     public function handle() {
         $rate = (float) $this->argument('rate');
